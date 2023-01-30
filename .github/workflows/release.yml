@@ -14,7 +14,10 @@ jobs:
     container: node:slim
     steps:
       - run: apt-get update && apt-get install -y git
-      - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
+      - run: npm install @semantic-release/exec -D
+      - run: npm install @semantic-release/changelog -D
+      - run: npm install @semantic-release/git -D
+      - run: npm install @semantic-release/github -D
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
