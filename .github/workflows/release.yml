@@ -12,9 +12,9 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
+      - run: apt-get update && apt-get install -y git nodejs
+      - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: apt-get update && apt-get install -y git nodejs
-      - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
       - run: npx semantic-release -b ${{ inputs.Branch }} --dry-run
