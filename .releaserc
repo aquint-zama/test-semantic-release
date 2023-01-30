@@ -1,5 +1,4 @@
 {
-  "branches": ["main"],
   "tagFormat": "v${version}",
   "verifyConditions": ["@semantic-release/github"],
   "plugins": [
