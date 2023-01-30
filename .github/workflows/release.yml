@@ -16,11 +16,11 @@ jobs:
       options: --user root
     steps:
       - run: apt-get update && apt-get install -y git
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - run: npm install @semantic-release/exec -D
       - run: npm install @semantic-release/changelog -D
       - run: npm install @semantic-release/git -D
       - run: npm install @semantic-release/github -D
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - run: npx semantic-release -b ${{ inputs.Branch }} --dry-run
