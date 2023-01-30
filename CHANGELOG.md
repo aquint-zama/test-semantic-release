@@ -1,5 +1,17 @@
 # Semantic Versioning Changelog
 
+# [1.2.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.5...v1.2.0) (2023-01-30)
+
+
+### Bug Fixes
+
+* update SR config to commit version.py ([11aebcb](https://github.com/aquint-zama/test-semantic-release/commit/11aebcba7f1cb870f53fbb4da8f56db011ef2751))
+
+
+### Features
+
+* add banner ([09557ad](https://github.com/aquint-zama/test-semantic-release/commit/09557ad65cb4237346ba43c77812e3062e736b60))
+
 ## [1.1.5](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.4...v1.1.5) (2023-01-30)
 
 
