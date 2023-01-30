@@ -11,7 +11,9 @@ env:
 jobs:
   create-release:
     runs-on: ubuntu-latest
+    container:
+      image: node:latest
     steps:
-      - run: apt-update && apt-install -y git nodejs
+      - run: apt-get update && apt-get install -y git
       - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
       - run: npx semantic-release -b ${{ inputs.Branch }} --dry-run
