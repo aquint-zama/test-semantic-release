@@ -8,6 +8,8 @@ docker run --platform linux/amd64  --rm   -v "$PWD":/data --entrypoint /bin/bash
 apt-get update && apt-get install -y git
 npm install @semantic-release/exec -D
 npm install @semantic-release/changelog -D
+npm install @semantic-release/git -D
+npm install @semantic-release/github -D
 ```
 
 run inside docker:
