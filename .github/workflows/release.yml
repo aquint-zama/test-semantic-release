@@ -12,7 +12,7 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     container:
-      image: node:slim
+      image: node:latest
     steps:
       - run: apt-update && apt-install -y git
       - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
