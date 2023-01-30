@@ -1,7 +1,5 @@
 {
   "branches": ["main"],
-  "dryRun": false,
-  "ci": false,
   "tagFormat": "v${version}",
   "verifyConditions": ["@semantic-release/github"],
   "plugins": [
