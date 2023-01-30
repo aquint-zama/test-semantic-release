@@ -11,8 +11,9 @@ env:
 jobs:
   create-release:
     runs-on: ubuntu-latest
+    container: node:slim
     steps:
-      - run: apt-get update && apt-get install -y git nodejs
+      - run: apt-get update && apt-get install -y git
       - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
       - uses: actions/checkout@v3
         with:
