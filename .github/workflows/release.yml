@@ -10,7 +10,9 @@ env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   create-release:
-    runs-on: 'node:slim'
+    runs-on: ubuntu-latest
+    container:
+      image: node:slim
     steps:
       - run: apt-update && apt-install -y git
       - run: npm install -D @semantic-release/exec @semantic-release/changelog @semantic-release/git @semantic-release/github
