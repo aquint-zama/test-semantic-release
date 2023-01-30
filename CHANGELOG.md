@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.5](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.4...v1.1.5) (2023-01-30)
+
+
+### Bug Fixes
+
+* update publish.sh ([676a59f](https://github.com/aquint-zama/test-semantic-release/commit/676a59f7737357fefbb5d4745b177107ae3b53b8))
+
 ## [1.1.4](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.3...v1.1.4) (2023-01-30)
 
 
