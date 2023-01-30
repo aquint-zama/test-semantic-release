@@ -1,3 +1,37 @@
 {
-  "branches": ["master"]
-}
+  "branches": ["main"],
+  "dryRun": false,
+  "ci": false,
+  "tagFormat": "v${version}",
+  "verifyConditions": ["@semantic-release/github"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "# Semantic Versioning Changelog"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"]
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "release/**"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/exec", {
+      "publishCmd": "./publish.sh ${nextRelease.version}"
+    }]
+]}
