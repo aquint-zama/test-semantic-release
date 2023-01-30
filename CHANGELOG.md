@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.4](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.3...v1.1.4) (2023-01-30)
+
+
+### Bug Fixes
+
+* suck at sed ([267c33f](https://github.com/aquint-zama/test-semantic-release/commit/267c33f6a2ab7fc4795defba76ef8bb5a5c768f9))
+
 ## [1.1.3](https://github.com/aquint-zama/test-semantic-release/compare/v1.1.2...v1.1.3) (2023-01-30)
 
 
