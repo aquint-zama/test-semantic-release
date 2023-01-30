@@ -15,6 +15,10 @@
       }
     ],
     [
+      "@semantic-release/exec", {
+      "publishCmd": "./publish.sh v${nextRelease.version}"
+    }],
+    [
       "@semantic-release/git",
       {
         "assets": ["CHANGELOG.md", "version.py"]
@@ -25,13 +29,9 @@
       {
         "assets": [
           {
-            "path": "release/**"
+            "path": "CHANGELOG.md"
           }
         ]
       }
-    ],
-    [
-      "@semantic-release/exec", {
-      "publishCmd": "./publish.sh v${nextRelease.version}"
-    }]
+    ]
 ]}
