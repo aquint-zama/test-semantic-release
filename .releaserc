@@ -32,6 +32,6 @@
     ],
     [
       "@semantic-release/exec", {
-      "publishCmd": "./publish.sh ${nextRelease.version}"
+      "publishCmd": "./publish.sh v${nextRelease.version}"
     }]
 ]}
