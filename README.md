@@ -1,6 +1,6 @@
 # Test Semantic Release
 
-This is a test project to automate the release process locally or in CI
+This is a test project to automate the release process locally or in CI.
 
 
 ## Install
@@ -22,6 +22,10 @@ cd data
 do some commits (feat|fix|chore...)
 npx semantic-release -b main --no-ci
 ```
+
+## CI test
+
+Launch a manual workflow `Release` and choose the target branch.
 
 ## Customize
 
