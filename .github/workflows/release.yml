@@ -19,10 +19,8 @@ jobs:
         uses: codfish/semantic-release-action@v1
         with:
           branches: ${{ inputs.Branch }}
-          plugins: |
+          additional_packages: |
             [
-              '@semantic-release/commit-analyzer',
-              '@semantic-release/release-notes-generator',
               '@semantic-release/github',
               '@semantic-release/git',
               '@semantic-release/changelog',
