@@ -1,5 +1,16 @@
 # Semantic Versioning Changelog
 
+## [1.3.2](https://github.com/aquint-zama/test-semantic-release/compare/v1.3.1...v1.3.2) (2023-01-31)
+
+
+### Bug Fixes
+
+* add actions permission ([b85cf94](https://github.com/aquint-zama/test-semantic-release/commit/b85cf94757e341d4d7ad9f746cd1ee2111cbb45b))
+* **ci:** actions ([6946c26](https://github.com/aquint-zama/test-semantic-release/commit/6946c2681a198961cb0e8373b08baaee5c24d7f0))
+* David's touch ([8013094](https://github.com/aquint-zama/test-semantic-release/commit/80130945e098e03c68285eee25c9540025dafbf0))
+* pin actions in CI ([a49fa81](https://github.com/aquint-zama/test-semantic-release/commit/a49fa811e04ff98bf2453d810d0cf5c38d0c70f6))
+* workflow ([8961ebf](https://github.com/aquint-zama/test-semantic-release/commit/8961ebf5c1b2ccfbe9f59a1104bf2088c0b28edc))
+
 ## [1.3.1](https://github.com/aquint-zama/test-semantic-release/compare/v1.3.0...v1.3.1) (2023-01-31)
 
 
