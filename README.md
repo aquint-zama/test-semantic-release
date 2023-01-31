@@ -1,4 +1,6 @@
-# test-semantic-release
+# Test Semantic Release
+
+This is a test project to automate the release process locally or in CI
 
 
 ## Install
