@@ -1,5 +1,19 @@
 # Semantic Versioning Changelog
 
+# [1.3.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.2.2...v1.3.0) (2023-01-31)
+
+
+### Bug Fixes
+
+* changelog manual issue ([d0e7618](https://github.com/aquint-zama/test-semantic-release/commit/d0e76184f1fccce0e1344bc56037145b0b79709c))
+* keep branch as a param for wf ([77ad74b](https://github.com/aquint-zama/test-semantic-release/commit/77ad74bece355bc4087af3a0f7f437b52a0ddd91))
+* prepate for proper ci ([4c4b1fb](https://github.com/aquint-zama/test-semantic-release/commit/4c4b1fbc03710ba22f3c1fd179a2573f927e4121))
+
+
+### Features
+
+* Release as a Manual WF ([85d74b6](https://github.com/aquint-zama/test-semantic-release/commit/85d74b66174bb457d2a9841b1efa3a4944c3dcdc))
+
 ## [1.2.2](https://github.com/aquint-zama/test-semantic-release/compare/v1.2.1...v1.2.2) (2023-01-30)
 
 
