@@ -21,6 +21,10 @@ do some commits (feat|fix|chore...)
 npx semantic-release -b main --no-ci
 ```
 
+## CI test
+
+Launch a manual workflow `Release` and choose the target branch.
+
 ## Customize
 
 You could customize the .releaserc or publish.sh script to whatever you want.
