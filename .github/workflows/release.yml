@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
         with:
           fetch-depth: 0
       - name: Release
-        uses: codfish/semantic-release-action@v1
+        uses: codfish/semantic-release-action@da160b1641c06934ddd00715c6594be85acb5fce
         with:
           branches: ${{ inputs.Branch }}
           additional_packages: |
