@@ -12,13 +12,13 @@ npm install @semantic-release/git -D
 npm install @semantic-release/github -D
 ```
 
-## Test
+## Local test
 
 run inside docker:
 ```
 cd data
 do some commits (feat|fix|chore...)
-npx semantic-release
+npx semantic-release -b main --no-ci
 ```
 
 ## Customize
