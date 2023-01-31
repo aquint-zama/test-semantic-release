@@ -6,6 +6,8 @@ on:
           description: 'Select Target Branch (default: main)'
           required: true
           default: 'main'
+permissions:
+  contents: write
 jobs:
   prepare:
     name: Release
