@@ -9,25 +9,28 @@ on:
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
 jobs:
-  create-release:
+  prepare:
+    name: Prepare
     runs-on: ubuntu-latest
-    container:
-      image: node:slim
-      options: --user root
     steps:
-      - run: apt-get update && apt-get install -y git
-      - name: Checkout code
-        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - name: Checkout
+        uses: actions/checkout@v1
+
+  release:
+    name: Release
+    needs: Prepare
+    runs-on: ubuntu-latest
+    steps:
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+        id: semantic   # Need an `id` for output variables
         with:
-          fetch-depth: 0
-      - name: install deps
-        run: |
-          npm install @semantic-release/exec -D
-          npm install @semantic-release/changelog -D
-          npm install @semantic-release/git -D
-          npm install @semantic-release/github -D
-      - name: Create new Release
-        run: |
-          pwd
-          ls -la
-          npx semantic-release -b ${{ inputs.Branch }} --dry-run
+          branch: ${{ inputs.Branch }}
+          # You can specify specifying version range for the extra plugins if you prefer.
+          extra_plugins: |
+            @semantic-release/git
+            @semantic-release/changelog
+            @semantic-release/exec
+            @semantic-release/github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
