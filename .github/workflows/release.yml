@@ -16,11 +16,18 @@ jobs:
       options: --user root
     steps:
       - run: apt-get update && apt-get install -y git
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
         with:
           fetch-depth: 0
-      - run: npm install @semantic-release/exec -D
-      - run: npm install @semantic-release/changelog -D
-      - run: npm install @semantic-release/git -D
-      - run: npm install @semantic-release/github -D
-      - run: npx semantic-release -b ${{ inputs.Branch }} --dry-run
+      - name: install deps
+        run: |
+          npm install @semantic-release/exec -D
+          npm install @semantic-release/changelog -D
+          npm install @semantic-release/git -D
+          npm install @semantic-release/github -D
+      - name: Create new Release
+        run: |
+          pwd
+          ls -la
+          npx semantic-release -b ${{ inputs.Branch }} --dry-run
