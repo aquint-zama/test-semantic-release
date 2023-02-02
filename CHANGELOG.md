@@ -1,5 +1,17 @@
 # Semantic Versioning Changelog
 
+# [1.4.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.3.2...v1.4.0) (2023-02-02)
+
+
+### Bug Fixes
+
+* add CI info in README ([e48f135](https://github.com/aquint-zama/test-semantic-release/commit/e48f1353b7e8ee7e43828b5efa5a029826aad447))
+
+
+### Features
+
+* update README ([f65dacb](https://github.com/aquint-zama/test-semantic-release/commit/f65dacbeb2d28c995d08d7b4136483356eaa4d76))
+
 ## [1.3.2](https://github.com/aquint-zama/test-semantic-release/compare/v1.3.1...v1.3.2) (2023-01-31)
 
 
