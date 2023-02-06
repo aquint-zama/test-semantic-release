@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.5.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.4.0...v1.5.0) (2023-02-06)
+
+
+### Features
+
+* make it awesome ([ed1e20d](https://github.com/aquint-zama/test-semantic-release/commit/ed1e20d66dcde227cc56def36a8851f20603fc69))
+
 # [1.4.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.3.2...v1.4.0) (2023-02-02)
 
 
