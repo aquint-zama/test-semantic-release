@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+# [1.6.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.5.2...v1.6.0) (2024-02-08)
+
+
+### Features
+
+* add dummy initial version ([9dfec92](https://github.com/aquint-zama/test-semantic-release/commit/9dfec9283b3326a0737c352b999eac7559082d53))
+* add dummy2 initial version ([be096dd](https://github.com/aquint-zama/test-semantic-release/commit/be096dd20adad261479d37dfae39bf6a1ed72606))
+
 ## [1.5.2](https://github.com/aquint-zama/test-semantic-release/compare/v1.5.1...v1.5.2) (2024-02-07)
 
 
