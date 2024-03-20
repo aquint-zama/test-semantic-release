@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.6.1](https://github.com/aquint-zama/test-semantic-release/compare/v1.6.0...v1.6.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* add more void ([4f7b8f2](https://github.com/aquint-zama/test-semantic-release/commit/4f7b8f26da274eeb1dd80eb25a0884ada7ed02b0))
+
 # [1.6.0](https://github.com/aquint-zama/test-semantic-release/compare/v1.5.2...v1.6.0) (2024-02-08)
 
 
